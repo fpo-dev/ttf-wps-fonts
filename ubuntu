@@ -1,0 +1,24 @@
+Installation and configuration for Ubuntu 18.04 LTS
+
+Download the latest .deb file from http://wps-community.org/downloads
+
+Install the .deb file.
+
+sudo dpkg -i wps*
+
+Create the .font folder in Terminal
+
+sudo mkdir ~/.fonts
+
+cd /tmp
+
+git clone https://github.com/iamdh4/ttf-wps-fonts.git
+
+cd /tmp/ttf-wps-fonts
+
+cd ~/.fonts
+
+sudo cp /tmp/ttf-wps-fonts/* . && sudo rm -rf /tmp/ttf*
+
+
+Re-launch Writer
